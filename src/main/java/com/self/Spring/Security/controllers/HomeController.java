@@ -10,4 +10,15 @@ public class HomeController {
     public String home() {
         return ("Welcome to Spring Security Project");
     }
+
+    @GetMapping("/user")
+    public String user() {
+        return ("Welcome USER Spring Security Project");
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return ("<h1>Welcome ADMIN Spring Security Project<h1>");
+    }
+
 }
